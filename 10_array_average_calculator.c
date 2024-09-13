@@ -7,7 +7,7 @@ int main()
 {
 	double arr1[5] = { 10, 13, 12, 7, 8 };
 	double arr2[5] = { 1.8, -0.2, 6.3, 13.9, 20.5 };
-	double arr3[3] = { 1, 2, 3 };// different size
+	double arr3[3] = { 1, 2, 3 };
  
 	printf("address = %p\n", arr1);
 	printf("size = %zd\n", sizeof(arr1));
@@ -22,7 +22,7 @@ int main()
 double avg_cal(double* data_array, int n)
 {
 	double avg = 0.0;
-	//for (int i = 0; i < sizeof(data_array)/sizeof(data_array[0]); ++i) // recognize pointer size
+	//for (int i = 0; i < sizeof(data_array)/sizeof(data_array[0]); ++i)
 	for (int i = 0; i < n; ++i)
 	{
 		avg += data_array[i];
