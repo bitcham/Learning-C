@@ -8,13 +8,13 @@
 #define NAME	"Chambit Oh"
 #define ADDRESS "Helsinki, Fin"
 
-void print_multiple_chars(char c, int n_stars, bool endl); // (parameterize)parameter -> argument // prototype - compling
+void print_multiple_chars(char c, int n_stars, bool endl); 
 void print_centered_str(char str[]);
 
 
 int main() 
 {
-	print_multiple_chars('*', WIDTH, true); // argument
+	print_multiple_chars('*', WIDTH, true); 
 	
 
 	print_centered_str(NAME);
@@ -26,10 +26,10 @@ int main()
 	return 0;
 }
 
-void print_multiple_chars(char c, int n_stars, bool endl) // linking
+void print_multiple_chars(char c, int n_stars, bool endl) 
 {
 	for (int i = 0; i < n_stars; ++i)
-		printf("%c", c); //putchar(c)
+		printf("%c", c); 
 
 	if (endl == true)
 		printf("\n");
